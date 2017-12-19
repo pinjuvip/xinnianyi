@@ -1,0 +1,311 @@
+{
+  "settings": {
+    "name": "Site-12-19_1404",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#f7ed4a",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": "2",
+        "display4Font": "Rubik",
+        "display4Size": "0.8",
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "versionFirst": "4.3.4",
+    "uniqCompNum": 14,
+    "versionPublish": "4.3.4"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "品居租房网活动页",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "H1": {
+              "text-align": "center",
+              "color": "#f7ed4a"
+            }
+          },
+          "_name": "header2",
+          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/jumbotron.jpg\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#767676\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">&nbsp;租房新渠道<br>&nbsp;省钱服务多</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">&nbsp; &nbsp;</p>\n                <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-white-outline\" href=\"https://jinshuju.net/f/HgkOey\">在线委托</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "qEemjWtEDG",
+          "_anchor": "header2-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">在线委托租房<br>服务费4.5折</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-4\">即日起，在线委托租房需求的客户，可享受服务费4.5折起，比如：租9000元的房子，您只需付1990元服务费，同时还享受我们提供的超多实用服务，<br>如：免费入住清洁、免费入住清毒、<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;免费清冼空调、免费入住礼包、<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;免费清洁洗衣机。<br><br>&nbsp; 活动起止：2018.1.18-2018.4.30\n                </h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qEg1hW3MWS",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content4-4"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            }
+          },
+          "_name": "content5",
+          "_customHTML": "<section class=\"mbr-section content5\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/jumbotron.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#0f7699\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center mbr-bold mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\">有品质<br>&nbsp;更爱家&nbsp;</h2>\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\">好生活 要配好家电 家私</h3>\n                <p class=\"mbr-text align-center mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-if=\"showText\" mbr-article data-multiline>\n                    Shape your future web project with sharp design and refine coded functions\n                </p>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-white-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qEg1oZKjL9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content5-5"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">家电租赁<br>家私租赁</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-4\">通过品居租房网 承租的房子，我均提供家电租赁及家私租赁，为您的生活提升品质，还能降低开支，家电、家私的折旧折价我们来承担。<br>39元/月 租全新家调<br>&nbsp; &nbsp; &nbsp; &nbsp;29元/月 租台面式净水器<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;19元/月 租实木餐桌四人位<br>更重要的是，押金均在40-65%以内.\n                </h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qEg8AIhTgY",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content4-b"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "@media (min-width: 992px)": {
+              ".mbr-figure": {
+                "padding-right": "4rem"
+              }
+            },
+            "@media (max-width: 992px)": {
+              ".mbr-figure": {
+                "padding-bottom": "1rem"
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <img src=\"@PROJECT_PATH@/assets/images/7-31-1081x975.jpg\" alt=\"Mobirise\" title>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>真省钱</b><br>从服务费开始，到日常清洁，再到家电家私，我们都为您着想！</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qEg1tgytzO",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content6-6"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "@media (min-width: 992px)": {
+              ".mbr-figure": {
+                "padding-right": "4rem"
+              }
+            },
+            "@media (max-width: 992px)": {
+              ".mbr-figure": {
+                "padding-bottom": "1rem"
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"60\">\n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <img src=\"@PROJECT_PATH@/assets/images/7-12-1080x975.jpg\" alt=\"Mobirise\" title>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\"><b>真服务</b><br>我们提供的不仅仅是房屋信息，而是：“居家综合服务商”<br>在您租房居家的过程中，找到我们一家就全部解决了.<br><br>我们的愿景：<br>让更多的人省心 &nbsp;省事 &nbsp;省钱住进新家！\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qEg1Fx4xFe",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content6-7"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#232323",
+              "font-weight": "300"
+            },
+            ".number-wrap": {
+              "color": "@labelsColor",
+              "border-color": "rgba(255, 255, 255, 0.15)",
+              "position": "relative",
+              "display": "inline-block",
+              "text-align": "center",
+              "padding": "5px 10px 13px 10px",
+              "margin": "0",
+              "min-width": "118px",
+              "border-radius": "2px",
+              "max-width": "100%"
+            },
+            ".number": {
+              "font-style": "normal",
+              "font-weight": "700",
+              "text-transform": "none",
+              "letter-spacing": "-2px",
+              "font-size": "55px",
+              "word-spacing": "0",
+              "line-height": "1.3",
+              "color": "@numbersColor"
+            },
+            ".period": {
+              "display": "block",
+              "padding-top": "2px",
+              "border-top": "1px solid rgba(0, 0, 0, 0.1)"
+            },
+            ".dot": {
+              "position": "absolute",
+              "top": "-10px",
+              "right": "-1em",
+              "width": "1em",
+              "display": "block",
+              "font-size": "55px",
+              "height": "83%",
+              "overflow": "hidden",
+              "font-style": "normal",
+              "font-weight": "700",
+              "line-height": "89.65px",
+              "text-transform": "none",
+              "letter-spacing": "0",
+              "word-spacing": "0",
+              "color": "@numbersColor"
+            },
+            ".countdown-cont": {
+              "background": "linear-gradient(45deg, @panelColor, @panelColor2)",
+              "max-width": "700px",
+              "border-radius": "3px",
+              "margin": "0 auto"
+            },
+            "@media (max-width: 768px)": {
+              ".dot": {
+                "display": "none"
+              }
+            },
+            "@media (max-width: 543px)": {
+              ".number-wrap": {
+                "margin-bottom": "15px"
+              }
+            },
+            "@media (max-width: 550px)": {
+              ".col-xs-3": {
+                "padding-left": "0",
+                "padding-right": "0"
+              },
+              ".number-wrap": {
+                "min-width": "auto"
+              }
+            },
+            "@media (max-width: 440px)": {
+              ".number, .dot": {
+                "font-size": "40px"
+              }
+            },
+            "@media (max-width: 380px)": {
+              ".period": {
+                "font-size": "0.8rem"
+              }
+            }
+          },
+          "_name": "countdown2",
+          "_customHTML": "<section class=\"countdown2\" group=\"Countdowns\" plugins=\"countdown\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Show Event Name\" name=\"showEvent\" checked>\n        <input type=\"checkbox\" title=\"Show Event Date\" name=\"showDate\" checked>\n        <input type=\"color\" title=\"Panel Color1\" name=\"panelColor\" value=\"#149dcc\">\n        <input type=\"color\" title=\"Panel Color2\" name=\"panelColor2\" value=\"#4f4943\">\n        <input type=\"text\" title=\"Countdown\" name=\"countdown\" value=\"2018/04/30\">\n        <input type=\"text\" inline title=\"Days\" name=\"daysCountdown\" value=\"Days\">\n        <input type=\"text\" inline title=\"Hours\" name=\"hoursCountdown\" value=\"Hours\">\n        <input type=\"text\" inline title=\"Minutes\" name=\"minutesCountdown\" value=\"Minutes\">\n        <input type=\"text\" inline title=\"Seconds\" name=\"secondsCountdown\" value=\"Seconds\">\n        <input type=\"color\" title=\"Numbers Color\" name=\"numbersColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Labels Color\" name=\"labelsColor\" value=\"#ffffff\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#b2ccd2\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title pb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"></h2>\n        <h3 class=\"mbr-section-subtitle align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">活动结束时间</h3>\n    </div>\n    <div class=\"container pt-5 mt-2\">\n        <div class=\" countdown-cont align-center p-4\">\n            <div class=\"event-name align-left mbr-white \" mbr-if=\"showEvent\">\n                <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-2\">活动结束时间</h4>\n            </div>\n            <div class=\"countdown align-center py-2\" data-due-date=\"{{countdown}}\">\n            </div>\n            <div title=\"{{daysCountdown}}\" class=\"daysCountdown\"></div>\n            <div title=\"{{hoursCountdown}}\" class=\"hoursCountdown\"></div>\n            <div title=\"{{minutesCountdown}}\" class=\"minutesCountdown\"></div>\n            <div title=\"{{secondsCountdown}}\" class=\"secondsCountdown\"></div>\n            <div class=\"event-date align-left mbr-white\" mbr-if=\"showDate\">\n                <h5 class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\">&nbsp;活动结倒计时</h5>\n            </div>\n        </div>\n\n        <div class=\"media-container-row pt-5\" mbr-if=\"showButtons\">\n            <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\">\n                <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                <a class=\"btn btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qEg2vRUFGz",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "countdown2-9"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "footer6",
+          "_customHTML": "<section group=\"Footers\" global once mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/jumbotron.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#2e2e2e\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2017</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qEg2RX3wWw",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": true,
+          "_params": {},
+          "_anchor": "footer6-a"
+        }
+      ]
+    }
+  }
+}
